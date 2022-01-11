@@ -164,14 +164,14 @@ function giveResult(choice)
     if(computerScore == 5)
     {
         bodyText.innerText = 'Computer Wins Game!';
-        bodySubText.innerText = '';
+        //bodySubText.innerText = '';
         flag = true;
         return;
     }
     if(playerScore == 5)
     {
         bodyText.innerText = 'Player Wins Game!';
-        bodySubText.innerText = '';
+        //bodySubText.innerText = '';
         flag = true;
         return;
     }
