@@ -1,7 +1,8 @@
 .content
 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    max-height: 100vh;
 }
 
 .header
@@ -11,10 +12,10 @@
     align-content: center;
     justify-content: center;
     flex-flow: column wrap;
-    background-color: aqua;
+    background-color: #4287f5;
     flex: auto;
     padding: 40px;
-    border: 5px solid aqua; 
+    border: 5px solid #4287f5; 
     border-radius: 20px;
 }
 
@@ -28,7 +29,8 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    margin-bottom: 30px;
 }
 
 #bodyText,
