@@ -4,6 +4,8 @@ let playerScr = document.querySelector('#playerScore');
 let compScr = document.querySelector('#compScore');
 let bodyText = document.querySelector('#bodyText');
 let bodySubText = document.querySelector('#bodySubText');
+let bodyReset = document.querySelector('#bodyReset');
+let btn;
 
 let computerScore = 0;
 let playerScore = 0;
@@ -162,19 +164,10 @@ function giveResult(choice)
     compScr.innerText = 'Computer: ' + computerScore;
     
     if(computerScore == 5)
-    {
-        bodyText.innerText = 'Computer Wins Game!';
-        //bodySubText.innerText = '';
-        flag = true;
-        return;
-    }
+        finishGame('Computer');
+
     if(playerScore == 5)
-    {
-        bodyText.innerText = 'Player Wins Game!';
-        //bodySubText.innerText = '';
-        flag = true;
-        return;
-    }
+        finishGame('Player');
 }
 
 function compChoice()
@@ -214,7 +207,7 @@ function convertEmoji(text)
             return '✌️';
             break;
         case 'lizard':
-            return '🦎';
+            return '🤏';
             break;
         case 'spock':
             return '🖖';
@@ -225,4 +218,34 @@ function convertEmoji(text)
 function capitalize(string)
 {
     return string[0].toUpperCase() + string.slice(1);
+}
+
+function resetPage()
+{
+    computerScore = 0;
+    playerScore = 0;
+    flag = false;
+    bodyText.textContent = 'Raise Your Weapon';
+    bodySubText.textContent = 'First to 5 wins';
+    bodyReset.removeChild(bodyReset.firstElementChild);
+    playerIcon.textContent = '⚔️';
+    compIcon.textContent = '⚔️';
+    playerScr.textContent = 'Player: 0';
+    compScr.textContent = 'Computer: 0';
+}
+
+function finishGame(player)
+{
+    bodyText.innerText = player + ' Wins Game!';
+
+    btn = document.createElement('button');
+    btn.classList.add('resetButton');
+    btn.textContent = "Reset?";
+    btn.addEventListener('click', event => {
+        resetPage();
+    });
+    bodyReset.appendChild(btn);
+
+    flag = true;
+    return;
 }

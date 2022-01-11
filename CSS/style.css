@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     height: 99vh;
+    width: 99vw;
 }
 
 .header
@@ -32,6 +33,13 @@
     flex-flow: column nowrap;
     margin-bottom: 30px;
     flex: 1 0 auto;
+}
+
+#bodyReset
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 #bodyText,
@@ -127,4 +135,15 @@
     border-radius: 20px;
     color: white;
     flex-shrink: 0; 
+}
+
+.resetButton
+{
+    padding: 10px;
+    font-family: Acme;
+    background-color: #b82a28;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 40px;
 }
