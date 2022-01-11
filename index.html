@@ -7,32 +7,37 @@
         <title> Rock Paper Scissors Lizard Spock</title>
 
         <script type="text/javascript" src="JS/app.js" defer></script>
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="content">
-                <div class="header">Rock Paper Scissors Lizard Spock</div>
+                <div class="header">
+                    <div class="headerText">Rock Paper Scissors Lizard Spock</div>
+                </div>
                 <div class="blockOne">
-                    <div class="bodyText">Choose Wisely</div>
-                    <div class="bodySubText">First to 5 wins</div>
-                    <div class="linkText">
-                        <div class="bodySubText">Quantum Random Number Generator courtesy of</div>
-                        <a href="">The University of Australia</a>
-                    </div>
+                    <div id="bodyText">Choose Wisely</div>
+                    <div id="bodySubText">First to 5 wins</div>
                     <div class="icons">
-                        <div id="playerIcon"></div>
-                        <div id="compIcon"></div>
+                        <div id="playerIcon">?</div>
+                        <div id="compIcon">?</div>
                     </div>
                     <div class="scores">
-                        <div id="playerScore"></div>
-                        <div id="compScore"></div>
+                        <div id="playerScore">Player: 0</div>
+                        <div id="compScore">Computer: 0</div>
                     </div>
                     <div class="btns">
-                        <button class="rockBtn" onclick="giveResult('rock')">Rock</button>
-                        <button class="paperBtn" onclick="giveResult('paper')">Paper</button>
-                        <button class="scissorBtn" onclick="giveResult('scissor')">Scissors</button>
-                        <button class="lizardBtn" onclick="giveResult('lizard')">Lizard</button>
-                        <button class="spockBtn" onclick="giveResult('spock')">Spock</button>
+                        <button class="rockBtn" onclick="giveResult('rock')">✊</button>
+                        <button class="paperBtn" onclick="giveResult('paper')">✋</button>
+                        <button class="scissorBtn" onclick="giveResult('scissor')">✌️</button>
+                        <button class="lizardBtn" onclick="giveResult('lizard')">🦎</button>
+                        <button class="spockBtn" onclick="giveResult('spock')">🖖</button>
                     </div>
                 </div>
                 <div class="footer">Made with 💖 and ☕</div>
