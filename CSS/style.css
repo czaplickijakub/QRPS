@@ -21,6 +21,11 @@
     background-position: 50% 60%;
 }
 
+.text
+{
+    border: 2px solid gold;
+}
+
 #bodyReset
 {
     display: flex;
@@ -113,6 +118,7 @@
     border-radius: 10px;
     background-color: #42040f;
     padding: 15px;
+    border: 2px solid gold;
 }
 
 .footer
