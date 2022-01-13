@@ -1,7 +1,7 @@
 # RPSLS
 ## A rock paper scissor lizard spock game
 
-## The website may be accessed [here](https://czaplickijakub.github.io/RPSSL/).
+## The website may be accessed [here](https://czaplickijakub.github.io/Rock-Paper-Scissors-Lizard-Spock/).
 
 ## What I've Learned
 - Manipulating multiple DOM objects
