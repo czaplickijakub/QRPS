@@ -114,12 +114,11 @@
 .spockBtn
 {
     font-size: 100px;
-    border: none;
-    border-radius: 10px;
     background-color: #42040f;
-    padding: 0px 20px;
+    padding: 0px 10px;
+    border: none;
     background-image: url(../assets/IconBackground.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
