@@ -44,7 +44,7 @@
     font-family: MedievalSharp;
     color: #ffdc5d;
     background-color: #42040f;
-    opacity: .98; 
+    opacity: .98;
 }
 
 #bodyText
@@ -117,8 +117,11 @@
     border: none;
     border-radius: 10px;
     background-color: #42040f;
-    padding: 15px;
-    border: 2px solid gold;
+    padding: 0px 20px;
+    background-image: url(../assets/IconBackground.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .footer
